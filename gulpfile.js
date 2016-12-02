@@ -4,7 +4,7 @@ var gulp    = require('gulp'),
     rimraf  = require('rimraf');
 
 gulp.task('default', function () {
-  gulp.src('source/**/*.{jpg,png}')
+  gulp.src('source/**/*.{jpg,png,jpeg,JPG,PNG,JPEG}')
     .pipe(tinypng(secrets.apikey))
     .pipe(gulp.dest('build'));
 });
